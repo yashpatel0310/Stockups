@@ -1,0 +1,76 @@
+
+absl-py==0.11.0
+alabaster==0.7.12
+
+argh==0.26.2
+astroid @ file:///C:/ci/astroid_1592487315634/work
+astropy==4.0.2
+
+colorama @ file:///tmp/build/80754af9/colorama_1603211150991/work
+
+cycler==0.10.0
+Django==3.1.7
+docutils==0.16
+filelock==3.0.12
+isort @ file:///tmp/build/80754af9/isort_1602603989581/work
+joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
+json5==0.9.5
+jsonschema @ file:///tmp/build/80754af9/jsonschema_1602607155483/work
+Keras==2.4.3
+Keras-Preprocessing==1.1.2
+keyring @ file:///C:/ci/keyring_1601489747083/work
+kiwisolver @ file:///C:/ci/kiwisolver_1604014703538/work
+lazy-object-proxy==1.4.3
+matplotlib @ file:///C:/ci/matplotlib-base_1603355780617/work
+mccabe==0.6.1
+nsepy==0.8
+numba==0.51.2
+numexpr==2.7.1
+numpy @ file:///C:/ci/numpy_and_numpy_base_1603466732592/work
+numpydoc @ file:///tmp/build/80754af9/numpydoc_1605117425582/work
+pandas @ file:///C:/ci/pandas_1602083338010/work
+pandas-datareader==0.9.0
+Pillow @ file:///C:/ci/pillow_1603823068645/work
+
+psutil @ file:///C:/ci/psutil_1598370330503/work
+py @ file:///tmp/build/80754af9/py_1593446248552/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pyChart.JS==0.3.0
+pycodestyle==2.6.0
+pycosat==0.6.3
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+pycurl==7.43.0.6
+pydocstyle @ file:///tmp/build/80754af9/pydocstyle_1598885001695/work
+pyflakes==2.2.0
+Pygments @ file:///tmp/build/80754af9/pygments_1604103097372/work
+pylint @ file:///C:/ci/pylint_1598617153160/work
+PyNaCl @ file:///C:/ci/pynacl_1595000047588/work
+pyodbc===4.0.0-unsupported
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyparsing==2.4.7
+pyreadline==2.1
+pyrsistent @ file:///C:/ci/pyrsistent_1600141795814/work
+PySocks==1.7.1
+pytest==0.0.0
+
+
+rsa==4.7
+Rtree==0.9.4
+ruamel-yaml==0.15.87
+scikit-image==0.17.2
+scikit-learn @ file:///C:/ci/scikit-learn_1598377018496/work
+scipy @ file:///C:/ci/scipy_1604596260408/work
+
+sympy @ file:///C:/ci/sympy_1605101511098/work
+tables==3.6.1
+tblib @ file:///tmp/build/80754af9/tblib_1597928476713/work
+tensorboard==2.4.1
+tensorboard-plugin-wit==1.8.0
+tensorflow==2.4.1
+tensorflow-estimator==2.4.0
+termcolor==1.1.0
+terminado==0.9.1
+testpath==0.4.4
+
+yfinance==0.1.55

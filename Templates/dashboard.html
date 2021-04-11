@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<title>Dashboard</title>
+	        <link href="{% static 'css/dash.css' %}" rel="stylesheet" />
+
+</head>
+<body>
+
+<form action=""  method="POST">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="Submit" name="submit" value="Submit"/>
+</form>
+
+	<div class="box">
+		<div class="pred">
+			<canvas id="pred" width="600" height="210"></canvas>
+
+		</div>
+
+		<div class="sens">
+			<canvas id="sens" width="400" height="290"></canvas>
+		</div>
+		<div class="nift">
+			<canvas id="nifty" width="400" height="290"></canvas>
+		</div>	
+		<br>
+					
+	</div>
+	
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var a = document.getElementById('pred').getContext('2d');
+var pred = new Chart(a, {
+    type: 'line',
+    data: {
+        labels: {{ label2|safe }},
+        datasets: [{
+            label: 'Past 100 Days Data',
+            data: {{ stdata|safe }},
+            backgroundColor: ['rgba(153, 102, 255, 0.2)'],
+            
+        },{
+            label: '30 days Predicted Data',
+            data: {{ prediction|safe }},
+            backgroundColor: ['rgba(75, 192, 192, 0.2)'],
+            
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        }
+    }
+});
+</script>
+
+<script>
+const ctx = document.getElementById('sens').getContext('2d');
+const sens = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: {{ label1|safe }},
+        datasets: [{
+            label: 'Sensex Historic Data',
+            data: {{ sensex|safe }},
+            backgroundColor: ['rgba(75, 192, 192, 0.2)'],
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        }
+    }
+});
+</script>
+
+<script>
+var m = document.getElementById('nifty').getContext('2d');
+var nifty = new Chart(m, {
+    type: 'line',
+    data: {
+        labels: {{ label1|safe }},
+        datasets: [{
+            label: 'Nifty Historic Data',
+            data: {{ nifty|safe }},
+            backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+            
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        }
+    }
+});
+</script>
+
+</html>

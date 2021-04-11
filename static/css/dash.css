@@ -1,0 +1,94 @@
+body
+{
+	background-color: #1E1E2E;
+}
+
+
+
+.pred {
+	border-radius:10px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: #27293D;
+	width: 95%;
+	height: 500px;
+	box-shadow: 0px 8px 24px 1px #00000080;
+}
+.sens {
+	float: left;
+	border-radius:10px;
+	margin-top: 50px;
+	background-color: #27293D;
+	width: 46%;
+	margin-left: 2.5%;
+	height: 500px;
+	box-shadow: 0px 8px 24px 1px #00000080;
+}
+.nift {
+	float: left;
+	margin-left: 3%;
+	border-radius:10px;
+	margin-top: 50px;
+	background-color: #27293D;
+	width: 46%;
+	height: 500px;
+	box-shadow: 0px 8px 24px 1px #00000080;
+}
+.footer {
+	border-radius:10px;
+	margin-top: 500px;
+	background-color: #27293D;
+	width: 100%;
+	height: 200px;
+	box-shadow: 0px 8px 24px 1px #00000080;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
